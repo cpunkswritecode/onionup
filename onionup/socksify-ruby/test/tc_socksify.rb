@@ -180,7 +180,7 @@ class SocksifyTest < Test::Unit::TestCase
   end
 
   def test_proxy
-    enable_socks
+    enable_socks 
 
     default_server = TCPSocket.socks_server
     default_port = TCPSocket.socks_port
@@ -195,7 +195,7 @@ class SocksifyTest < Test::Unit::TestCase
   end
 
   def test_proxy_failback
-    enable_socks
+    enable_socks 
 
     default_server = TCPSocket.socks_server
     default_port = TCPSocket.socks_port
@@ -210,3 +210,6 @@ class SocksifyTest < Test::Unit::TestCase
     assert_equal TCPSocket.socks_port, default_port
   end
 end
+
+
+
