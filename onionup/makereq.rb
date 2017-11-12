@@ -2,7 +2,8 @@ require './tor/http'
 require './tor/configuration'
 require './tor/tor_requests'
 
-res = Tor::HTTP.get("216.58.194.196", "/", 80)
+res = Tor::HTTP.get("8.8.8.8", "/", 80)
+
 p res.code
 p res.body
 

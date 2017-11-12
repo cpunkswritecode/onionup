@@ -21,9 +21,12 @@ module Tor
         port = uri_or_host.port
       end
       start_params = start_parameters(uri_or_host, host, port)
+      # debugger
+      p "Starting get request"
+      # Not getting here
       start_socks_proxy(start_params) do |http|
-        debugger
         request = Net::HTTP::Get.new(path || uri_or_host.path)
+        p request
         Tor.configuration.headers.each do |header, value|
           request.delete(header)
           request.add_field(header, value)
@@ -63,10 +66,13 @@ module Tor
     private
 
     def self.start_socks_proxy(start_params, &code_block)
-      debugger
+      # debugger
+      p "Using socks proxy #{Tor.configuration.ip} #{Tor.configuration.port}"
+      p "Start params #{start_params}"
       Net::HTTP.SOCKSProxy(Tor.configuration.ip, Tor.configuration.port).
         start(*start_params) do |http|
-          debugger
+          # debugger
+          p "Here"
           code_block.call(http)
         end
     end
