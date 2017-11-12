@@ -1,6 +1,6 @@
 require 'net/http'
 require 'socksify/http'
-
+require 'pry'
 module Tor
 
   class HTTP
@@ -20,7 +20,6 @@ module Tor
         host = uri_or_host.host
         port = uri_or_host.port
       end
-
       start_params = start_parameters(uri_or_host, host, port)
       start_socks_proxy(start_params) do |http|
         request = Net::HTTP::Get.new(path || uri_or_host.path)
@@ -102,4 +101,3 @@ module Tor
   end
 
 end
-
