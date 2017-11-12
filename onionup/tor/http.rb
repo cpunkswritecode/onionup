@@ -1,6 +1,6 @@
 require 'net/http'
 require 'socksify/http'
-require 'pry'
+require 'byebug'
 module Tor
 
   class HTTP
@@ -22,6 +22,7 @@ module Tor
       end
       start_params = start_parameters(uri_or_host, host, port)
       start_socks_proxy(start_params) do |http|
+        debugger
         request = Net::HTTP::Get.new(path || uri_or_host.path)
         Tor.configuration.headers.each do |header, value|
           request.delete(header)
@@ -62,8 +63,12 @@ module Tor
     private
 
     def self.start_socks_proxy(start_params, &code_block)
+      debugger
       Net::HTTP.SOCKSProxy(Tor.configuration.ip, Tor.configuration.port).
-        start(*start_params) { |http| code_block.call(http) }
+        start(*start_params) do |http|
+          debugger
+          code_block.call(http)
+        end
     end
 
     def self.start_parameters(uri_or_host, host, port)
