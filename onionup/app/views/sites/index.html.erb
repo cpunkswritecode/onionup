@@ -1,1 +1,7 @@
 <h1>Index of Sites</h1>
+<% @sites.each do |site| %>
+<ul>
+  <li><%= site.url %></li>
+</ul>
+
+<% end %>
