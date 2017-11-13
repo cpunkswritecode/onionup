@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
   def index
-  end 
+    redirect_to sites_url
+  end
 end
