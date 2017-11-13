@@ -1,7 +1,12 @@
 <h1>Index of Sites</h1>
 <% @sites.each do |site| %>
 <ul>
-  <li><%= site.url %></li>
+  <li><%= site.url %> </li>
+  <% if site.ping %>
+    Ping success
+  <% else %>
+    Ping failed
+  <% end %>
 </ul>
 
 <% end %>
