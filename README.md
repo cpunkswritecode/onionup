@@ -8,3 +8,6 @@ Set up routes:
 /sites [delete, new, index]
 
 
+For local development:
+1. run tor from terminal
+2. rails s
