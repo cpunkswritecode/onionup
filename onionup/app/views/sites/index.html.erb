@@ -1,14 +1,13 @@
-<h1>Index of Sites</h1>
-asdf
+<h1>All Sites</h1>
 <%= link_to "Add new site", new_site_url %>
 <% @sites.each do |site| %>
 <ul>
-  <li><%= site.url %> </li>
+  <li><%= site.url %> <br>Status:
   <% if site.ping %>
-    Ping success
+    ✅
   <% else %>
-    Ping failed
+    ❌
   <% end %>
+  </li>
 </ul>
-asdf
 <% end %>

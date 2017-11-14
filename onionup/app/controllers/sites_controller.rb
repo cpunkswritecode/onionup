@@ -17,7 +17,7 @@ class SitesController < ApplicationController
     @site = Site.new(site_params)
     @site.user_id = current_user.id
     if @site.save
-      redirect_to sites_url
+    redirect_to sites_url
       return
     else
       flash.now[:errors] = @site.errors.full_messages
