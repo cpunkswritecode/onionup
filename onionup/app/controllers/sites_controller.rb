@@ -27,7 +27,18 @@ class SitesController < ApplicationController
     # fail
   end
 
-  def delete
+  def destroy
+    @site = Site.find_by(id: params[:id])
+    if !@site
+      redirect_to sites_url
+      return
+    elsif @site.destroy
+      redirect_to sites_url
+      return
+    else
+      flash.now[:errors] = @site.errors.full_messages
+      return
+    end
   end
 
   private

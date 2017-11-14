@@ -8,6 +8,6 @@
   <% else %>
     ❌
   <% end %>
-  </li>
+</li> <%= button_to "Delete site", site_url(site), method: :delete %>
 </ul>
 <% end %>
