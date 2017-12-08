@@ -1,17 +1,27 @@
 # onionup
 ## Uptime Checking Service for Tor Hidden Services
 
-### What we're building
+Description of project, including goals
+Link to live demo and/or instructions on how to use and run code
+List of techs/languages/plugins/APIs used
+Technical implementation details for anything worth mentioning (basically anything you had to stop and think about before building)
+Include links to the neatest parts of the code, or embed snippets
+Include screenshots of anything that looks pretty
+A few example READMEs are linked from this page
+To-dos and future features
 
-Pingdom inspired tor uptime checker that can display the health of both tor hidden services and clearnet websites 
+### Project Description
+
+Pingdom inspired Tor uptime checker that displays the health of hidden services and clearnet websites 
 
 User authentication
-* Devise gem  (Oauth)
-* Username 
-* Password
+* Username (null: false)
+* Password (null: false)
 * Optional email
 * Modal popup
 * Recover account with email
+* Devise gem 
+* Explanation of why we chose devise encryption (how it adds to functionality)
 
 User Settings
 * Change password
@@ -27,20 +37,27 @@ View index of saved URLs. Each site card has
 * Tab different windows of time e.g., seconds, minutes, days, months
 * Render time?
 
+New URL 
+* Allow ip address
+* Allow any format of URL
+
 Site show page
 * Delete button
 * Larger graph 
 * Edit alias (customize)
 * Edit description
+* ip address 
 * Download PDF? 
 * Download CSV?
 
 Settings section?
-* Change color scheme
-* Edit units (e.g. ms vs s)
+* Change color scheme?
+* Edit units (e.g. ms vs s)?
 
 
-Technologies 
+
+
+### Technologies 
 * Ruby on Rails
 * VueJS
 * D3 for graphs
@@ -50,7 +67,7 @@ Technologies
 
 Stretch Goals
 * Ping sites even while offline and store information in DB
-* Fullscreen dev mode 
+* Fullscreen or presentation dev mode 
 
 Health: How long site is up vs how long site is down
 Pingtime: Ping response time
