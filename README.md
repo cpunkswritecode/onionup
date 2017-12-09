@@ -13,16 +13,23 @@ To-dos and future features
 ## This Weekend 
 
 **Reid**
+
 - [ ] Vue tutorial/toyapp in vue
 - [ ] Build frontend API for user auth 
+
 **Jay**
+
 - [ ] Vue tutorial/toyapp in vue
 - [ ] Install Tor
 - [ ] Modals (login), layout
+
 **Chris** 
+
 - [ ] Vue tutorial/toyapp in vue
 - [ ] AWS & Tor Client testing/scripting (Proof of concept for live version with traffic)
+
 **Artem**
+
 - [ ] Vue tutorial/toyapp in vue
 - [ ] Install Tor
 - [ ] Workers (sidekiq) concurrent processes, gathering ping information, load time, component interactions on hidden services (stretch)
@@ -30,11 +37,13 @@ To-dos and future features
 ## Monday
 
 **Reid**
+
 - [ ] Site show page 
 - [ ] User show page
 - [ ] Settings show page 
 
 **Jay**
+
 - [ ] Index Component 
 - [ ] Sidebar/page styling, navigation
 
@@ -43,51 +52,73 @@ To-dos and future features
 - [ ] Bootup tor and rails with one command 
 
 **Artem**
+
 - [ ] Making APIs for frontend to get information 
 - [ ] Timestamped data for graphs
 
 ## Tuesday
 
 **Reid**
+
 - [ ] Graphing ping data in d3
 **Jay**
+
 - [ ] Create site card component for index 
 **Chris** 
+
 - [ ] Store ping data in database and requesting data 
 **Artem**
+
 - [ ] Look into websockets (Application Cable) connecting front and backend
 
 ## Wednesday
 
 **Reid**
+
 - [ ] Display historical data from backend to frontend
 **Jay**
+
 - [ ] 
 **Chris** 
+
 - [ ] Display historical data from backend to frontend 
 **Artem**
+
 - [ ]
 
 ## Thursday
 
 **Reid**
+
 - [ ] 
+
 **Jay**
+
 - [ ] 
 **Chris** 
+
 - [ ] 
+
 **Artem**
+
 - [ ]
 
 ## Friday
 
 **Reid**
+
 - [ ] 
+
 **Jay**
+
 - [ ] 
+
 **Chris** 
+
 - [ ] 
+
 **Artem**
+
 - [ ]
 
 
