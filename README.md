@@ -61,12 +61,15 @@ To-dos and future features
 **Reid**
 
 - [ ] Graphing ping data in d3
+
 **Jay**
 
 - [ ] Create site card component for index 
+
 **Chris** 
 
 - [ ] Store ping data in database and requesting data 
+
 **Artem**
 
 - [ ] Look into websockets (Application Cable) connecting front and backend
@@ -76,12 +79,15 @@ To-dos and future features
 **Reid**
 
 - [ ] Display historical data from backend to frontend
+
 **Jay**
 
 - [ ] 
+
 **Chris** 
 
 - [ ] Display historical data from backend to frontend 
+
 **Artem**
 
 - [ ]
@@ -95,6 +101,7 @@ To-dos and future features
 **Jay**
 
 - [ ] 
+
 **Chris** 
 
 - [ ] 
