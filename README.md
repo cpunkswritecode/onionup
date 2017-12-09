@@ -10,6 +10,87 @@ Include screenshots of anything that looks pretty
 A few example READMEs are linked from this page
 To-dos and future features
 
+## This Weekend 
+
+**Reid**
+- [ ] Vue tutorial/toyapp in vue
+- [ ] Build frontend API for user auth 
+**Jay**
+- [ ] Vue tutorial/toyapp in vue
+- [ ] Install Tor
+- [ ] Modals (login), layout
+**Chris** 
+- [ ] Vue tutorial/toyapp in vue
+- [ ] AWS & Tor Client testing/scripting (Proof of concept for live version with traffic)
+**Artem**
+- [ ] Vue tutorial/toyapp in vue
+- [ ] Install Tor
+- [ ] Workers (sidekiq) concurrent processes, gathering ping information, load time, component interactions on hidden services (stretch)
+
+## Monday
+
+**Reid**
+- [ ] Site show page 
+- [ ] User show page
+- [ ] Settings show page 
+
+**Jay**
+- [ ] Index Component 
+- [ ] Sidebar/page styling, navigation
+
+**Chris** 
+- [ ] Have rails server running concurrently with onion proxy able to make ping requests
+- [ ] Bootup tor and rails with one command 
+
+**Artem**
+- [ ] Making APIs for frontend to get information 
+- [ ] Timestamped data for graphs
+
+## Tuesday
+
+**Reid**
+- [ ] Graphing ping data in d3
+**Jay**
+- [ ] Create site card component for index 
+**Chris** 
+- [ ] Store ping data in database and requesting data 
+**Artem**
+- [ ] Look into websockets (Application Cable) connecting front and backend
+
+## Wednesday
+
+**Reid**
+- [ ] Display historical data from backend to frontend
+**Jay**
+- [ ] 
+**Chris** 
+- [ ] Display historical data from backend to frontend 
+**Artem**
+- [ ]
+
+## Thursday
+
+**Reid**
+- [ ] 
+**Jay**
+- [ ] 
+**Chris** 
+- [ ] 
+**Artem**
+- [ ]
+
+## Friday
+
+**Reid**
+- [ ] 
+**Jay**
+- [ ] 
+**Chris** 
+- [ ] 
+**Artem**
+- [ ]
+
+
 ### Project Description
 
 Pingdom inspired Tor uptime checker that displays the health of hidden services and clearnet websites 
@@ -55,6 +136,9 @@ Settings section?
 * Edit units (e.g. ms vs s)?
 
 
+Stretch Goals
+* Ping sites even while offline and store information in DB
+* Fullscreen or presentation dev mode 
 
 
 ### Technologies 
@@ -65,9 +149,6 @@ Settings section?
 * Sidekiq
 * Devise 
 
-Stretch Goals
-* Ping sites even while offline and store information in DB
-* Fullscreen or presentation dev mode 
 
 Health: How long site is up vs how long site is down
 Pingtime: Ping response time
