@@ -149,12 +149,9 @@ Stretch Goals
 * Sidekiq
 * Devise
 
-<<<<<<< HEAD
-=======
 Stretch Goals
 * Ping sites even while offline and store information in DB
 * Fullscreen or presentation dev mode
->>>>>>> 9881c93dc5c10282a5a055e32b5af92ca7a65eb4
 
 Health: How long site is up vs how long site is down
 Pingtime: Ping response time
